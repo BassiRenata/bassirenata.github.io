@@ -24,26 +24,27 @@
 }
 
 ::selection{
-	background:#364D55;
+	background: #D8DDEB;
 }
-
+.circle:before {
+	content: '\25CF';
+  	font-size: 7.5em;
+  	color: #00C86F;
+}
 
 html,
 body{
 	width:100%;
 	height:100%;
-    min-height: 100%;
-	overflow:hidden;
-	background: #FFF;
-	font-family: 'Jost', sans-serif;
-	font-weight:normal;
-	color:#2E3545;
+  	min-height: 100%;
+	overflow: hidden;
+	font-family: 'Bitter', serif;
 }
 
 .wrapper{
 	height:100%;
 	display: table;
-	
+
 }
 
 .main{
@@ -55,19 +56,13 @@ body{
 .header,
 .content,
 .footer{
-	/*estrutura*/
 	position:relative;
-	overflow:hidden;
 	margin:0 auto;
 	width:90%;
 	height:auto;
 }
-.content .footer{
-	float: left;
-}
-.footer{
-	clear: both;
-}
+
+
 .fade-in{
 	/*formatação inicial*/
 	opacity:0;
@@ -113,45 +108,15 @@ body{
 	-o-animation-delay:0.8s;
 	animation-delay:0.8s;
 }
-
-/*/////////////////////////////////////////////////////
-// header // presentation
-/////////////////////////////////////////////////////*/
-
-.header{
-	font-size:2.3em;
-	line-height:1.1em;
-}
 .header__title{
-	margin-top:0;
-	line-height:1.1em;
-	font-weight:normal;
-}
-.header__description span{
-	display:inline-block;
+	font-size: 9.2em;
+	color:#0D121C;
 }
 
-/*/////////////////////////////////////////////////////
-// section // projects
-/////////////////////////////////////////////////////*/
-
-.content{
-	font-weight:light;
-	color:#999;
-	margin-bottom:25px;
-}
-.content__title{
-	font-size:1.2em;
+.header__description{
+	font-size:8em;
 	line-height:1.2em;
-}
-
-/*/////////////////////////////////////////////////////
-// footer
-/////////////////////////////////////////////////////*/
-
-.social{
-	width:640px;
-	height:55px;
+	color: #9FABBB;
 }
 
 /*/////////////////////////////////////////////////////
@@ -159,26 +124,17 @@ body{
 /////////////////////////////////////////////////////*/
 
 .list{
-	/*estrutura*/
-	list-style:none;
 	padding:0;
-	margin:0 auto;
-	display:table;
-	table-layout:fixed;
-	text-align:center;
-	/*formatação*/
-	width:100%;
-	height:100%;
+	margin:0;
+	font-weight:light;
+
 }
 .list__item{
-	/*estrutura*/
 	display:table-cell;
-	vertical-align:middle;
-	text-align:left;
 	/*formatação*/
-	transition:0.4s ease-out;
-	float: left;
-	margin-right: 20px;
+	float:left;
+	margin-right:3em;
+	font-family: 'Open Sans', serif;
 }
 .list__item>a{
 	/*estrutura*/
@@ -189,15 +145,12 @@ body{
 	/*alternativa para textos longos*/
 	text-overflow:ellipsis;
 	white-space:nowrap;
-	overflow:hidden;
 	/*formatação*/
-	color:#6E8790;
-	font-weight:regular;
-	outline:none;
+	color:#0D121C;
+	font-weight:lighter;
 	text-decoration: none;
-	font-size:1.2em;
-	line-height:1.2em;
-	border-bottom:2px solid transparent;
+	font:1.2em;
+	
 	/*animação*/
 	-webkit-transition:color 0.2s ease-out, border-color 0.4s ease-out;
 	-moz-transition:color 0.2s ease-out, border-color 0.4s ease-out;
@@ -214,39 +167,9 @@ body{
 }
 
 .list__item:nth-child(3)>a:hover{
-	color:#00C86F;	
-}
-.list__item:nth-child(4)>a:hover{
-	color:#00C86F;	
-}
-.list__item:nth-child(5)>a:hover{
-	color:#00C86F;	
+	color:#00C86F;
 }
 
-h1.header__title:hover::before {
-    content: '';
-    background-image: url(http://bassirenata.com/nice.png);
-    width: 30vw;
-    height: 40vh;
-    position: fixed;
-    background-size: 15vw;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-
-}
-h1.header__title:hover{
-
-}
-
-.circle:before {
-  content: ' \25CF';
-  font-size: 3em;
-	color: #ff0202;
-
-}
 
 /*/////////////////////////////////////////////////////
 // adapters

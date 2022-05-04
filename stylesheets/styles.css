@@ -58,10 +58,6 @@ body {
     height: 100%;
     overflow: hidden;
 }
-.container{
-    overflow: "auto";
-}
-
 .wrapper {
     height: 100%;
     display: table;

@@ -140,6 +140,10 @@ body {
     gap: 24px;
     flex-direction: column;
 }
+@media (min-width: 600px) {
+  .list {
+    flex-direction: row;
+  }
 
 .list__item {
     font-family: 'Open Sans', serif;

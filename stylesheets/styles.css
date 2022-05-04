@@ -55,6 +55,8 @@ html,
 body {
     width: 100%;
     font-family: 'Bitter', serif;
+    height: 100%;
+    overflow: hidden;
 }
 
 .wrapper {

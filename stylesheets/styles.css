@@ -65,10 +65,13 @@ body {
 }
 
 .main {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     overflow: auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .circle:before {
@@ -132,15 +135,14 @@ body {
 .list {
     padding: 0;
     margin: 0 auto;
-    font-weight: light;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
 }
 
 .list__item {
-    display: table-cell;
-    /*formatação*/
-    float: left;
     font-family: 'Open Sans', serif;
-    margin-right: 5%;
 }
 
 .list__item>a {

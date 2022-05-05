@@ -54,7 +54,9 @@
 html,
 body {
     width: 100%;
-    font-family: 'Bitter', serif;
+    font-family: 'Bitter', serif;    
+    height: 100%;
+    overflow: scroll;
 }
 .wrapper {
     height: 100%;
